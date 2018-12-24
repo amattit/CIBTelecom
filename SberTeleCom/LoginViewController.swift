@@ -15,8 +15,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        phoneNumber = loginTextField.text ?? "9953454763"
-        ePassword = passwordTextField.text ?? "Forever$4"
+        
+        Settings.login = loginTextField.text ?? "9953454763"
+        Settings.password = passwordTextField.text ?? "Forever$4"
+//        var phoneNumber = "9953454763"
+//        var ePassword = "Forever$4"
         
         self.present(_splitViewController!, animated: true, completion: nil)
         
@@ -28,8 +31,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loginTextField.text = phoneNumber
-        passwordTextField.text = ePassword
+        loginTextField.text = Settings.login
+        passwordTextField.text = Settings.password
         // Do any additional setup after loading the view.
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -38,6 +41,7 @@ class LoginViewController: UIViewController {
         let navigationController = _splitViewController?.viewControllers[(_splitViewController?.viewControllers.count)! - 1] as! UINavigationController
         navigationController.topViewController!.navigationItem.leftBarButtonItem = _splitViewController?.displayModeButtonItem
         _splitViewController?.delegate = self
+        
     }
 
 }

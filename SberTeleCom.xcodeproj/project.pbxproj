@@ -16,9 +16,9 @@
 		4B2C56AA21C8FC2C00FC7FAE /* CallItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C56A921C8FC2C00FC7FAE /* CallItem.swift */; };
 		4B2C56AC21C8FD0500FC7FAE /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C56AB21C8FD0500FC7FAE /* API.swift */; };
 		4B2C56AE21C91DE700FC7FAE /* CallsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C56AD21C91DE700FC7FAE /* CallsTableViewCell.swift */; };
-		4B2C56B021C92CFD00FC7FAE /* GSRAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C56AF21C92CFD00FC7FAE /* GSRAPI.swift */; };
 		4B2C56B221CD433900FC7FAE /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C56B121CD433900FC7FAE /* Settings.swift */; };
 		4B607EF521CD8EE400C53BA4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B607EF421CD8EE400C53BA4 /* LoginViewController.swift */; };
+		4B8C261B21D0D6A900E797E8 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8C261A21D0D6A900E797E8 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +33,9 @@
 		4B2C56A921C8FC2C00FC7FAE /* CallItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallItem.swift; sourceTree = "<group>"; };
 		4B2C56AB21C8FD0500FC7FAE /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		4B2C56AD21C91DE700FC7FAE /* CallsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsTableViewCell.swift; sourceTree = "<group>"; };
-		4B2C56AF21C92CFD00FC7FAE /* GSRAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSRAPI.swift; sourceTree = "<group>"; };
 		4B2C56B121CD433900FC7FAE /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		4B607EF421CD8EE400C53BA4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4B8C261A21D0D6A900E797E8 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +78,9 @@
 				4B2C56A921C8FC2C00FC7FAE /* CallItem.swift */,
 				4B2C56AB21C8FD0500FC7FAE /* API.swift */,
 				4B2C56AD21C91DE700FC7FAE /* CallsTableViewCell.swift */,
-				4B2C56AF21C92CFD00FC7FAE /* GSRAPI.swift */,
 				4B2C56B121CD433900FC7FAE /* Settings.swift */,
 				4B607EF421CD8EE400C53BA4 /* LoginViewController.swift */,
+				4B8C261A21D0D6A900E797E8 /* SettingsTableViewController.swift */,
 			);
 			path = SberTeleCom;
 			sourceTree = "<group>";
@@ -162,8 +162,8 @@
 				4B2C56B221CD433900FC7FAE /* Settings.swift in Sources */,
 				4B2C569A21C8F14500FC7FAE /* CallDetailViewController.swift in Sources */,
 				4B2C569821C8F14500FC7FAE /* CallListViewController.swift in Sources */,
+				4B8C261B21D0D6A900E797E8 /* SettingsTableViewController.swift in Sources */,
 				4B2C569621C8F14500FC7FAE /* AppDelegate.swift in Sources */,
-				4B2C56B021C92CFD00FC7FAE /* GSRAPI.swift in Sources */,
 				4B2C56AC21C8FD0500FC7FAE /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

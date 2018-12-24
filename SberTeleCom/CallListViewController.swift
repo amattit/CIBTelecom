@@ -14,24 +14,12 @@ class CallListViewController: UITableViewController {
     var callItems = [CallItemViewModel]()
 
     var textField: UITextField?
+    
+    @IBAction
+    func backToList(_ sender: UIStoryboardSegue) {}
+    
     @IBAction func settingsBarButtonPressed(_ sender: UIBarButtonItem) {
-        let alertController = UIAlertController(title: "Настройка", message: "Введите IP адрес сервера распознования звонка", preferredStyle: UIAlertController.Style.alert)
         
-        alertController.addTextField { (txtField) in
-            self.textField = txtField
-        }
-        
-        alertController.addAction(UIAlertAction(title: "Ок", style: UIAlertAction.Style.default, handler: { (_) in
-            
-            Settings.ipForRecognize = self.textField?.text ?? " "
-            print(self.textField?.text ?? "*  *  *")
-        }))
-        
-        alertController.addAction(UIAlertAction(title: "Отмена", style: UIAlertAction.Style.cancel, handler: nil))
-        
-        self.present(alertController, animated: true) {
-            //
-        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()

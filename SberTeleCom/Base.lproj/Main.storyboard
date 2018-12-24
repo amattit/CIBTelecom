@@ -151,6 +151,166 @@
             </objects>
             <point key="canvasLocation" x="-856" y="-330"/>
         </scene>
+        <!--Settings Table View Controller-->
+        <scene sceneID="Fro-EE-43n">
+            <objects>
+                <tableViewController id="dnv-2A-S5A" customClass="SettingsTableViewController" customModule="SberTeleCom" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="soP-l2-RTq">
+                        <rect key="frame" x="0.0" y="0.0" width="703.5" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="mDR-S3-5rT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fBY-gB-h8y">
+                                        <rect key="frame" x="0.0" y="0.0" width="703.5" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fBY-gB-h8y" id="tXq-23-qHQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="703.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1F-Be-5U5">
+                                                    <rect key="frame" x="208" y="7" width="479.5" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IP Адресс для распознования" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Hg-gg-b4P">
+                                                    <rect key="frame" x="20" y="1.5" width="180" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="180" id="1DU-x5-Lzx"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="o1F-Be-5U5" firstAttribute="centerY" secondItem="tXq-23-qHQ" secondAttribute="centerY" id="HOa-Mj-DEa"/>
+                                                <constraint firstAttribute="trailing" secondItem="o1F-Be-5U5" secondAttribute="trailing" constant="16" id="PT3-Cu-HtO"/>
+                                                <constraint firstItem="o1F-Be-5U5" firstAttribute="leading" secondItem="5Hg-gg-b4P" secondAttribute="trailing" constant="8" id="Q3A-Np-Tz3"/>
+                                                <constraint firstItem="5Hg-gg-b4P" firstAttribute="centerY" secondItem="tXq-23-qHQ" secondAttribute="centerY" id="RTT-N6-fyt"/>
+                                                <constraint firstItem="5Hg-gg-b4P" firstAttribute="leading" secondItem="tXq-23-qHQ" secondAttribute="leadingMargin" id="ogv-fp-PdK"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ADL-JQ-q4S">
+                                        <rect key="frame" x="0.0" y="44" width="703.5" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ADL-JQ-q4S" id="H3t-Ie-rTa">
+                                            <rect key="frame" x="0.0" y="0.0" width="703.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aci-Lf-HMK">
+                                                    <rect key="frame" x="208" y="7" width="479.5" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Port для распознования" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ms-qg-vbt">
+                                                    <rect key="frame" x="20" y="1.5" width="180" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="180" id="yhK-Bx-GHp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1ms-qg-vbt" firstAttribute="centerY" secondItem="H3t-Ie-rTa" secondAttribute="centerY" id="D9W-Il-Z8p"/>
+                                                <constraint firstItem="Aci-Lf-HMK" firstAttribute="centerY" secondItem="H3t-Ie-rTa" secondAttribute="centerY" id="Ihs-3Y-unN"/>
+                                                <constraint firstItem="Aci-Lf-HMK" firstAttribute="leading" secondItem="1ms-qg-vbt" secondAttribute="trailing" constant="8" id="Kvc-3H-mOh"/>
+                                                <constraint firstItem="1ms-qg-vbt" firstAttribute="leading" secondItem="H3t-Ie-rTa" secondAttribute="leadingMargin" id="bCw-8E-Mda"/>
+                                                <constraint firstAttribute="trailing" secondItem="Aci-Lf-HMK" secondAttribute="trailing" constant="16" id="hZv-B8-N7J"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="cZW-gT-8CR">
+                                        <rect key="frame" x="0.0" y="88" width="703.5" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cZW-gT-8CR" id="W0H-by-hpk">
+                                            <rect key="frame" x="0.0" y="0.0" width="703.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W65-Jh-Fxe">
+                                                    <rect key="frame" x="208" y="7" width="479.5" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин от СберТелеком" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdi-sN-RYE">
+                                                    <rect key="frame" x="20" y="1.5" width="180" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="180" id="CN1-0E-nxW"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="W65-Jh-Fxe" secondAttribute="trailing" constant="16" id="4xV-nh-cUN"/>
+                                                <constraint firstItem="W65-Jh-Fxe" firstAttribute="leading" secondItem="Bdi-sN-RYE" secondAttribute="trailing" constant="8" id="6i6-Q3-Tq9"/>
+                                                <constraint firstItem="Bdi-sN-RYE" firstAttribute="leading" secondItem="W0H-by-hpk" secondAttribute="leadingMargin" id="YoQ-5H-I30"/>
+                                                <constraint firstItem="Bdi-sN-RYE" firstAttribute="centerY" secondItem="W0H-by-hpk" secondAttribute="centerY" id="fdp-nT-J1q"/>
+                                                <constraint firstItem="W65-Jh-Fxe" firstAttribute="centerY" secondItem="W0H-by-hpk" secondAttribute="centerY" id="ixS-d3-CXL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="eUh-rF-JzM">
+                                        <rect key="frame" x="0.0" y="132" width="703.5" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eUh-rF-JzM" id="rTB-IE-Pcs">
+                                            <rect key="frame" x="0.0" y="0.0" width="703.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QrU-nE-dMn">
+                                                    <rect key="frame" x="208" y="7" width="479.5" height="30"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль от СберТелеком" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FaD-DH-G6e">
+                                                    <rect key="frame" x="20" y="1.5" width="180" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="180" id="YGl-xl-Df0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QrU-nE-dMn" firstAttribute="centerY" secondItem="rTB-IE-Pcs" secondAttribute="centerY" id="0eZ-ka-uS1"/>
+                                                <constraint firstAttribute="trailing" secondItem="QrU-nE-dMn" secondAttribute="trailing" constant="16" id="8Tt-tq-Kuh"/>
+                                                <constraint firstItem="QrU-nE-dMn" firstAttribute="leading" secondItem="FaD-DH-G6e" secondAttribute="trailing" constant="8" id="A7o-Hd-cW0"/>
+                                                <constraint firstItem="FaD-DH-G6e" firstAttribute="centerY" secondItem="rTB-IE-Pcs" secondAttribute="centerY" id="WjU-Ui-J1y"/>
+                                                <constraint firstItem="FaD-DH-G6e" firstAttribute="leading" secondItem="rTB-IE-Pcs" secondAttribute="leadingMargin" id="q3u-u5-fLP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="dnv-2A-S5A" id="Og0-fA-N9I"/>
+                            <outlet property="delegate" destination="dnv-2A-S5A" id="QhJ-Yt-98n"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="IPAddressForRecognize" destination="o1F-Be-5U5" id="fp4-f4-7HP"/>
+                        <outlet property="loginForRecognize" destination="W65-Jh-Fxe" id="sA7-aT-cU4"/>
+                        <outlet property="passwordForeRecognize" destination="QrU-nE-dMn" id="KFX-9P-IGc"/>
+                        <outlet property="portForRecognize" destination="Aci-Lf-HMK" id="Q1t-11-WMF"/>
+                        <segue destination="hzo-WF-2Pi" kind="unwind" identifier="backToList" unwindAction="backToList:" id="gBo-QN-LVe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tZd-vH-BE8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hzo-WF-2Pi" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="704.8828125" y="-1333.59375"/>
+        </scene>
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
             <objects>
@@ -268,6 +428,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Настройка" id="UE1-J1-dQa">
                             <connections>
                                 <action selector="settingsBarButtonPressed:" destination="7bK-jq-Zjz" id="qqd-Fs-Mdj"/>
+                                <segue destination="dnv-2A-S5A" kind="showDetail" id="Gsl-0M-ePK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -86,7 +86,7 @@ class API {
         var urlComponents = URLComponents()
 
         urlComponents.host = Settings.ipForRecognize
-        urlComponents.port = 5000
+        urlComponents.port = Settings.portForRecognize
         urlComponents.scheme = "http"
         urlComponents.path = endPoint
         
@@ -97,8 +97,8 @@ class API {
         var request = URLRequest(url: url)
         request.httpMethod = method
         
-        let username = phoneNumber
-        let password = ePassword
+        let username = Settings.login
+        let password = Settings.password
         let loginString = String(format: "%@:%@", username, password)
         let loginData = loginString.data(using: String.Encoding.utf8)!
         let base64LoginString = loginData.base64EncodedString()

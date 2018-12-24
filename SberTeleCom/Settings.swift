@@ -19,4 +19,34 @@ class Settings {
             UserDefaults.standard.setValue(newValue, forKey: "ipForRecognize")
         }
     }
+    
+    static var portForRecognize: Int {
+        get {
+            return UserDefaults.standard.integer(forKey: "portForRecognize")
+        }
+        
+        set {
+            UserDefaults.standard.setValue(newValue, forKey: "portForRecognize")
+        }
+    }
+    
+    static var login: String {
+        get {
+            return UserDefaults.standard.string(forKey: "login") ?? ""
+        }
+        
+        set {
+            UserDefaults.standard.setValue(newValue, forKey: "login")
+        }
+    }
+    
+    static var password: String {
+        get {
+            return UserDefaults.standard.string(forKey: "password") ?? ""
+        }
+        
+        set {
+            UserDefaults.standard.setValue(newValue, forKey: "password")
+        }
+    }
 }
