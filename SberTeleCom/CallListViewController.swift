@@ -21,6 +21,13 @@ class CallListViewController: UITableViewController {
     @IBAction func settingsBarButtonPressed(_ sender: UIBarButtonItem) {
         
     }
+    
+    lazy var refreshControoller: UIRefreshControl = {
+        let rc = UIRefreshControl()
+        rc.addTarget(self, action: #selector(loadData), for: .valueChanged)
+        return rc
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,10 +39,17 @@ class CallListViewController: UITableViewController {
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? CallDetailViewController
         }
         
+        loadData()
+        self.tableView.refreshControl = refreshControoller
+    }
+    
+    @objc
+    func loadData() {
         API.shared.getCalls { (items) in
             self.callItems = items
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+                self.refreshControoller.endRefreshing()
             }
             
         }
